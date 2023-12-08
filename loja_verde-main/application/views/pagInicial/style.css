@@ -1,0 +1,203 @@
+body {
+  background-color: #221f1f;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 40px;
+  letter-spacing: 1px;
+  word-spacing: 1.2px;
+  color: #000000;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-indent: 70%;
+}
+
+#tudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  margin-bottom: 20%;
+  transition: filter 0.7s;
+  opacity: 0; /* Inicia com opacidade 0 */
+  animation: fade-in 3.5s ease forwards; /* esse ease eh pra animação carregar mais suave.Fowards deixa a animação no estado final. */
+}
+
+header {
+  color: #e50914;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+div {
+  text-align: center;
+  padding: 5px;
+  justify-content: center;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #e50914;
+  box-sizing: border-box;
+}
+label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+  text-align: left;
+}
+
+.btn {
+  background-color: #e50914;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  user-select: none;
+}
+
+#btneditar {
+  background-color: #009311;
+}
+
+.btn:hover {
+  background-color: #b2070d;
+}
+
+footer {
+  color: #999999;
+  text-align: center;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+#minha-tabela {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  filter: blur(5px); /* Aplica o desfoque inicial */
+  transition: filter 0.7s; /* Adiciona transição suave */
+}
+
+#minha-tabela:hover {
+  filter: none; /* Remove o desfoque ao passar o mouse */
+}
+
+#minha-tabela th,
+#minha-tabela td {
+  padding: 10px;
+  border: 1px solid #cccccc;
+}
+
+#minha-tabela th {
+  background-color: #e50914;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+#minha-tabela tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  border: 1px solid #e50914;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.label-maior {
+  display: inline-block;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0; /* Opacidade inicial */
+  }
+  to {
+    opacity: 1; /* Opacidade final */
+  }
+}
+
+@keyframes masc-ripple {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  20% {
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.01;
+    transform: scale(1);
+  }
+}
+
+@keyframes masc-ripple-dup {
+  0% {
+    transform: scale(0);
+  }
+  30% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+.radios label {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+.radio{
+  cursor: pointer;
+}
+.input-with-icon input {
+  background-repeat: no-repeat;
+  background-position: 5px center;
+}
+.input-with-icon i {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: #999;
+}
+.form1{
+  text-indent: 10%;
+}
+.form2{
+  text-indent: 10%;
+}
+.form3{
+  text-indent: 10%;
+}
